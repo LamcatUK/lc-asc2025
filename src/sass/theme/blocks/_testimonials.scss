@@ -1,0 +1,15 @@
+.testimonials {
+    &__card {
+        border: 1px solid var(--col-grey-200);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__content {
+        font-style: italic;
+    }
+    &__name {
+        text-align: end;
+        font-weight: var(--fw-600);
+    }
+}

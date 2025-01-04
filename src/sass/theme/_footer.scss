@@ -1,0 +1,22 @@
+footer {
+    background-color: var(--col-grey-100);
+    img {
+        max-width: 150px;
+    }
+    .menu-item {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        font-weight: var(--fw-600);
+        color: var(--col-dark);
+    }
+}
+.colophon {
+    background-color: var(--col-grey-200);
+    font-size: var(--fs-300);
+    color: var(--col-dark);
+    a {
+        text-decoration: none;
+    }
+}

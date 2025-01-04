@@ -1,0 +1,15 @@
+.service_cards {
+    margin-bottom: 3rem;
+    h2::after {
+        display: none;
+    }
+    &__card {
+        border: 1px solid var(--col-grey-400);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        row-gap: 0.5rem;
+    }
+}
