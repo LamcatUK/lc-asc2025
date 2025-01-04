@@ -1,5 +1,5 @@
 <section class="hero">
-    <div class="container-xl position-relative">
+    <div class="container-xl px-0 position-relative">
         <?= wp_get_attachment_image(get_field('background'), 'full', false, ['class' => 'hero__image', 'data-aos' => 'fade-down']) ?>
         <div class="overlay"></div>
         <div class="hero__title" data-aos="fade-up">
