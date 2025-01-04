@@ -21757,10 +21757,16 @@ footer a {
 
 .home_hero {
   position: relative;
-  height: calc(400px + var(--h-top-desktop));
-  margin-top: var(--h-top-desktop);
+  height: calc(400px + var(--h-top));
+  margin-top: var(--h-top);
   overflow: hidden;
   isolation: isolate;
+}
+@media (min-width: 992px) {
+  .home_hero {
+    height: calc(400px + var(--h-top-desktop));
+    margin-top: var(--h-top-desktop);
+  }
 }
 .home_hero__image {
   position: absolute;
@@ -21791,10 +21797,15 @@ footer a {
 .hero {
   position: relative;
   height: 500px;
-  margin-top: var(--h-top-desktop);
+  margin-top: var(--h-top);
   margin-bottom: 2rem;
   overflow: hidden;
   isolation: isolate;
+}
+@media (min-width: 992px) {
+  .hero {
+    margin-top: var(--h-top-desktop);
+  }
 }
 .hero__image {
   z-index: -1;

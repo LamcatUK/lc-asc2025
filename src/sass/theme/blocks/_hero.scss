@@ -1,8 +1,13 @@
 .home_hero {
     // padding-top: var(--h-top-desktop);
     position: relative;
-    height: calc(400px + var(--h-top-desktop));
-    margin-top: var(--h-top-desktop);
+
+    height: calc(400px + var(--h-top));
+    margin-top: var(--h-top);
+    @media (min-width:992px) {
+        height: calc(400px + var(--h-top-desktop));
+        margin-top: var(--h-top-desktop);
+    }
     overflow: hidden;
     isolation: isolate;
     &__image {
@@ -38,7 +43,10 @@
     // padding-top: var(--h-top-desktop);
     position: relative;
     height: 500px;
-    margin-top: var(--h-top-desktop);
+    margin-top: var(--h-top);
+    @media (min-width:992px) {
+        margin-top: var(--h-top-desktop);
+    }
     margin-bottom: 2rem;
     overflow: hidden;
     isolation: isolate;

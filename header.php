@@ -115,7 +115,7 @@ session_start();
     ?>
     <header id="wrapper-navbar" class="fixed-top p-0">
         <nav class="navbar navbar-expand-lg p-0">
-            <div class="container-xl pt-4 nav-top align-items-center">
+            <div class="container-xl pt-2 nav-top align-items-center">
                 <div class="top-nav">
                     <div class="top-nav__call"><?= do_shortcode('[contact_phone]') ?></div>
                     <div class="text-lg-center logo-container"><a href="/" class="logo" aria-label=""></a></div>
