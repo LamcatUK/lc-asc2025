@@ -112,7 +112,7 @@ function register_lc_dashboard_widget()
 {
     wp_add_dashboard_widget(
         'lc_dashboard_widget',
-        'Chillibyte',
+        'Lamcat',
         'lc_dashboard_widget_display'
     );
 }
