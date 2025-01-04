@@ -5,12 +5,12 @@ defined('ABSPATH') || exit;
 <div id="footer-top"></div>
 <footer class="py-5">
     <div class="container-xl">
-        <div class="row justify-content-between">
-            <div class="col-md-3">
+        <div class="row justify-content-between g-4">
+            <div class="col-md-3 text-center text-md-start">
                 <img src="<?= get_stylesheet_directory_uri() ?>/img/ascended-healing-logo-500x500.png" alt="Ascended Healing">
             </div>
             <div class="col-md-4">
-                <?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
+                <?php wp_nav_menu(array('theme_location' => 'footer_menu', 'menu-class' => 'text-center text-md-start')); ?>
             </div>
         </div>
     </div>
