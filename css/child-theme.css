@@ -21737,8 +21737,16 @@ footer {
 footer img {
   max-width: 150px;
 }
-footer .menu-item {
+footer .menu {
   list-style-type: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  footer .menu {
+    text-align: start;
+  }
 }
 footer a {
   text-decoration: none;
