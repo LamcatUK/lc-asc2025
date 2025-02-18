@@ -231,3 +231,24 @@ add_action('wp_enqueue_scripts', 'lc_theme_enqueue');
 //     return $items;
 // }
 // add_filter('wp_nav_menu_items', 'add_custom_menu_item', 10, 2);
+
+add_filter('wpcf7_before_send_mail', function ($contact_form) {
+    $submission = WPCF7_Submission::get_instance();
+    if (!$submission) {
+        return;
+    }
+
+    // Get submitted data
+    $posted_data = $submission->get_posted_data();
+
+    // Define blocked email addresses
+    $blocked_emails = [
+        'sophia_13@sky.com'
+    ];
+
+    // Check if submitted email is in the blocked list
+    if (!empty($posted_data['your-email']) && in_array($posted_data['your-email'], $blocked_emails)) {
+        // Prevent the email from being sent
+        $submission->skip_mail = true;
+    }
+});
