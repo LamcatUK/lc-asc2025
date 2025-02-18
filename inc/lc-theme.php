@@ -252,3 +252,10 @@ add_filter('wpcf7_before_send_mail', function ($contact_form) {
         $submission->skip_mail = true;
     }
 });
+
+add_filter('wpcf7_validate', function ($result, $tags) {
+    if (isset($_POST['honeypot']) && !empty($_POST['honeypot'])) {
+        $result->invalidate($tags[0], 'Spam detected.');
+    }
+    return $result;
+}, 10, 2);
